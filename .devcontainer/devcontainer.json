@@ -1,0 +1,19 @@
+{
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/home/vscode/opt/pypy3/bin/python"
+    },
+    "extensions": [
+        "ms-python.python"
+    ],
+    "appPort": [
+        80,
+        443
+        // or "HOST:CONTAINER"
+    ],
+    "remoteEnv": {
+        "PATH": "${containerEnv:HOME}/opt/pypy3/bin:${containerEnv:HOME}/opt/uwsgi:${containerEnv:PATH}",
+    },
+    "remoteUser": "vscode",
+}
