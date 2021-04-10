@@ -1,6 +1,6 @@
 FROM python:3.9-buster
 LABEL maintainer="Daniel Holth <dholth@gmail.com>"
-ARG pypy=pypy3.7-v7.3.3-linux64.tar.bz2
+ARG pypy=pypy3.7-v7.3.4-linux64.tar.bz2
 ARG venv=/home/vscode/opt/pypy3
 ARG user=vscode
 
